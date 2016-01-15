@@ -221,7 +221,7 @@
     fd.append(widget.settings.fileName, file);
 
     // Return from client function (default === undefined)
-    var can_continue = widget.settings.onBeforeUpload.call(widget.element, widget.queuePos);
+    var can_continue = widget.settings.onBeforeUpload.call(widget.element, widget.queuePos, widget.settings);
     
     // If the client function doesn't return FALSE then continue
     if( false === can_continue ) {
