@@ -1,0 +1,13 @@
+{
+    "name": "danielm/uploader",
+    "description": "Ajax Uploader for jquery",
+    "type": "Library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+          "name": "Daniel Morales",
+          "email": "daniminas@gmail.com"
+        }
+    ]
+}
