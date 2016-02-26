@@ -22,7 +22,15 @@
     dataType: null,
     fileName: 'file',
     onInit: function(){},
-    onFallbackMode: function() {message},
+    onFallbackMode: function(message) {
+      if (typeof console === "undefined" || typeof console.log === "undefined") {
+        alert(message);
+      }
+      else {
+        console.log(message)  
+      }
+  }
+    },
     onNewFile: function(id, file){},
     onBeforeUpload: function(id){},
     onComplete: function(){},
